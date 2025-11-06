@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 9 - Formularios y Validación Simple</title>
+  <style>
+    form {
+      max-width: 300px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #43a047;
+    }
+
+    #mensaje {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .error {
+      color: #e53935;
+    }
+
+    .exito {
+      color: #43a047;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario con validación simple</h1>
+
+  <form id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="email" id="correo" placeholder="Correo electrónico">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensaje"></div>
+
+  <script src="ejercicio9.js"></script>
+</body>
+</html>

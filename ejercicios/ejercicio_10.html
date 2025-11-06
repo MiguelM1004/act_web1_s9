@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 10 - Navegación entre Elementos</title>
+  <style>
+    .contenedor {
+      background-color: #f3f3f3;
+      padding: 15px;
+      border-radius: 10px;
+      width: 320px;
+    }
+
+    .caja {
+      background-color: #c5e1a5;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #43a047;
+    }
+
+    #info {
+      margin-top: 15px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Navegación entre elementos del DOM</h1>
+
+  <div class="contenedor" id="contenedor">
+    <div class="caja">Elemento 1</div>
+    <div class="caja" id="medio">Elemento 2 (Seleccionado)</div>
+    <div class="caja">Elemento 3</div>
+  </div>
+
+  <button id="navegarBtn">Mostrar relaciones</button>
+
+  <div id="info"></div>
+
+  <script src="ejercicio10.js"></script>
+</body>
+</html>
